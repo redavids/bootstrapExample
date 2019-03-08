@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Ristorante Con Fusion: About Us</title>
+    <title>Forest Street Coworking: Contact</title>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,19 +17,26 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-left">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="./index.html"><img src="img/logo.png" height="30" width="41"></a>
+            <a class="navbar-brand" href="./index.html"><img src="img/tree.jpeg" height="30" width="30"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./virtualtour.html"><span class="fa fa-info fa-lg"></span> Virtual Tour </a></li>
+                    <li class="nav-item"><a class="nav-link" href="./services.html"><span class="fa fa-list fa-lg"></span> Membership</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="./schedule.html"><span
+                        class="fa fa-calendar fa-lg"></span> Calendar</a></li> 
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
@@ -37,16 +44,70 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                <div class="col-12 col-sm-2 align-self-center">
+                    <img class="d-none d-sm-block" src="img/tree.jpeg" class="img-fluid">
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                        <img src="img/logo.png" class="img-fluid">
+                <div class="col-12 col-sm-10">
+                    <h1 style="text-align: center">Forest Street Coworking, Inc.</h1>
+                    <p class="d-none d-sm-block" style="text-align: center">
+                        All things are possible with coffee.
+                    </p>
+
+
+                </div>
+                <!--<div class="col-12 col-sm-3 align-self-center">
+                    <img src="img/tree.jpeg" class="img-fluid">
+                </div>
+
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a class="btn btn-warning btn-sm w-100" href="#reserveForm" role="button"
+                    data-toggle="tooltip" data-html="true"
+                    title="Or Call us at <br><strong>+852 12345678</strong>"
+                    data-placement="bottom">Reserve Table</a>
+                </div>-->
+            </div> 
+        </div>
+    </header>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-success btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+    
 
     <div class="container">
         <div class="row">
@@ -67,30 +128,28 @@
             <div class="col-12 col-sm-4 offset-sm-1">
                    <h5>Our Address</h5>
                     <address style="font-size: 100%">
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-		              <i class="fa fa-phone"></i>: +852 1234 5678<br>
-		              <i class="fa fa-fax"></i>: +852 8765 4321<br>
+                      300 Ivy Street<br>
+                      Suite 900 <br>
+		              Bellingham, WA<br>
+		              98225<br>
+		              <i class="fa fa-phone"></i>: 360 123 4567<br>
+		              <i class="fa fa-fax"></i>: 360 123 5678<br>
 		              <i class="fa fa-envelope"></i>:
-                        <a href="mailto:confusion@food.net">confusion@food.net</a>
+                        <a href="mailto:info@foreststreet.com">info@foreststreet.com</a>
 		           </address>
             </div>
             <div class="col-12 col-sm-6 offset-sm-1">
                 <h5>Map of our Location</h5>
-            </div>
-            <div class="col-12 col-sm-11 offset-sm-1">
-                <div class="btn-group" role="group">
-                    <a role="button" class="btn btn-primary" href="tel:+85212345678"><i class="fa fa-phone"></i> Call</a>
-                    <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a> 
-                    <a role="button" class="btn btn-success" href="mailto:confusion@food.net"><i class="fa fa-envelope-o"></i> Email</a>
-                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5262.157557906595!2d-122.48477510000004!3d48.74219189999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485a3b793d68bfd%3A0x124c50e556282ac0!2s300+E+Ivy+St%2C+Bellingham%2C+WA+98225!5e0!3m2!1sen!2sus!4v1552071965561"
+                 width="480" height="360" frameborder="1"></iframe>
             </div>
         </div>
 
-        <div class="row row-content">
+        
+
+        <div class="row row-content mt-5">
            <div class="col-12">
-              <h3>Send us your Feedback</h3>
+              <h3>Send us a Message</h3>
            </div>
             <div class="col-12 col-md-9">
                 <form>
@@ -144,7 +203,7 @@
                             </div>    
                         </div>
                         <div class="form-group row">
-                            <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                            <label for="feedback" class="col-md-2 col-form-label">Your Message</label>
                             <div class="col-md-10">
                                 <textarea class="form-control" 
                                 id="feedback" name="feedback" rows="12"></textarea>
@@ -152,8 +211,8 @@
                         </div>
                         <div class="form-group row">
                             <div class="offset-md-2 col-md-10">
-                                <button type="submit" class="btn btn-primary">
-                                    Send Feedback
+                                <button type="submit" class="btn btn-success">
+                                    Send Message
                                 </button>
                             </div> 
                         </div>
@@ -172,22 +231,27 @@
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="./index.html">Home</a></li>
-                        <li><a href="./aboutus.html">About</a></li>
-                        <li><a href="#">Menu</a></li>
+                        <li><a href="./virtualtour.html">Virtual Tour</a></li>
+                        <li><a href="./services.html">Membership</a></li>
                         <li><a href="#">Contact</a></li>
+                        <li><a href="./schedule.html">Calendar</a></li>
+                        <li><a data-toggle="modal" data-target="#loginModal">
+                                <span class="fa fa-sign-in" style="color: #15bc12" >
+                                </span> Login</a></li>
                     </ul>
                 </div>
                 <div class="col-7 col-sm-5">
                     <h5>Our Address</h5>
-                    <address>
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-                      <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-                      <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-                      <i class="fa fa-envelope fa-lg"></i>: 
-                      <a href="mailto:confusion@food.net">confusion@food.net</a>
-		           </address>
+                    <address style="font-size: 100%">
+                        300 Ivy Street<br>
+                        Suite 900 <br>
+                        Bellingham, WA<br>
+                        98225<br>
+                        <i class="fa fa-phone"></i>: 360 123 4567<br>
+                        <i class="fa fa-fax"></i>: 360 123 5678<br>
+                        <i class="fa fa-envelope"></i>:
+                          <a href="mailto:info@foreststreet.com">info@foreststreet.com</a>
+                     </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
@@ -202,7 +266,7 @@
            </div>
            <div class="row justify-content-center">             
                 <div class="col-auto">
-                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                    <p>© Copyright 2018 Forest Street Coworking, Inc.</p>
                 </div>
            </div>
         </div>

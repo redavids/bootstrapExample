@@ -3,6 +3,7 @@
     padding: 0px auto;
 }
 
+
 .row-content {
     margin: 0px auto;
     padding: 50 px 0 px 50 px 0 px;
@@ -11,7 +12,7 @@
 }
 
 .footer {
-    background-color: #D1C4E9;
+    background-color: #c5f2c4;
     margin: 0px auto;
     padding: 20px 0px 20px 0px;
 }
@@ -19,9 +20,19 @@
 .jumbotron {
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
-    background: #9575CD;
+    background: darkgreen;
+    /*background-image: url(/img/leaves.jpeg);
+    background-blend-mode: luminosity;*/
     color: floralwhite;
+    vertical-align: middle;
 }
+
+hr {
+    border-style: solid;
+    border-width: 5px;
+    border-color: darkgreen;
+}
+
 
 .address {
     font-size: 80%;
@@ -29,13 +40,22 @@
     color: #0f0f0f;
 }
 
+a {
+    color: #15bc12; 
+}
+
 body {
     padding: 50px 0px 0px 0px;
     z-index: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .navbar-dark {
-    background-color: #512DA8;    
+    background-color: #1e2d24;    
+}
+
+.navigation {
+    position: fixed;
 }
 
 .tab-content {
@@ -46,7 +66,7 @@ body {
 }
 
 .carousel {
-    background: #512DA8;
+    background: rgb(17, 37, 21);
 }
 
 .carousel-item {
@@ -58,4 +78,21 @@ body {
     top: 0;
     left: 0;
     min-height: 300px;
+    max-height: 300px;
+    max-width: 350px;
+}
+
+.carousel-caption {
+    margin-left: 250px;
+    text-align: left;
+}
+
+.nav-link {
+    color: darkgreen;
+}
+
+iframe {
+    border: 10px;
+    border-style: solid;
+    border-color: darkgreen;
 }

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 
-    <title>Forest Street Coworking</title>
+    <title>Forest Street Coworking: Calendar</title>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
             <a class="navbar-brand mr-auto" href="#"> <img src="img/tree.jpeg" height="30" width="30"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"> <a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span>
+                    <li class="nav-item"> <a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span>
                             Home</a></li>
                     <li class="nav-item"> <a class="nav-link" href="./virtualtour.html"><span
                                 class="fa fa-info fa-lg"></span> Virtual Tour</a></li>
@@ -33,8 +33,8 @@
                     </li>
                     <li class="nav-item"> <a class="nav-link" href="./contactus.html"><span
                                 class="fa fa-address-card fa-lg"></span> Contact</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="./schedule.html"><span
-                                    class="fa fa-calendar fa-lg"></span> Calendar</a></li>
+                    <li class="nav-item active"> <a class="nav-link" href="#"><span
+                        class="fa fa-calendar fa-lg"></span> Calendar</a></li>
                 </ul>
                 <span class="navbar-text">
                     <a data-toggle="modal" data-target="#loginModal">
@@ -113,23 +113,21 @@
     </header>
 
     <div class="container">
-        <div class="row row-content mt-5">
-            <div class="col-12 col-sm-6">
-                
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5262.157557906595!2d-122.48477510000004!3d48.74219189999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485a3b793d68bfd%3A0x124c50e556282ac0!2s300+E+Ivy+St%2C+Bellingham%2C+WA+98225!5e0!3m2!1sen!2sus!4v1552071965561"
-                 width="480" height="360" frameborder="0"></iframe>
+            <div class="row row-header">
+                <ol class="col-12 breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Membership</li>
+                </ol>
+                <div class="col-12">
+                    <h3>Membership at Forest Street</h3>
+                    <hr>
+                </div>
             </div>
-            <div class="col-12 col-sm-6">
-                <h2>Welcome!</h2>
-                <p>Forest Street Coworking is a place to work, network, and socialize. 
-                    Our convenient location near downtown Bellingham puts you at the heart 
-                    of the action. 
-                    <br>
-                    While you're here, take a <a href="./virtualtour.html">virtual tour,</a>
-                    explore our <a href="./services.html">membership</a> options, or <a href=
-                    "./contactus.html">drop us a line.</a>
-                </p>
+        <div class="row row-content mt-5">
+            <div class="col-12">
                 
+                <iframe src="https://calendar.google.com/calendar/embed?src=7oofhcg9tnnkg21oogj8o90v5g%40group.calendar.google.com&ctz=America%2FChicago" 
+                 width="1000px" height="800px" frameborder="1" scrolling="no"></iframe>
             </div>
         </div>
     </div>
@@ -149,14 +147,14 @@
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="./virtualtour.html">Virtual Tour</a></li>
                         <li><a href="./services.html">Membership</a></li>
                         <li><a href="./contactus.html">Contact</a></li>
-                        <li><a href="./schedule.html">Calendar</a></li>
+                        <li><a href="#">Calendar</a></li>
                         <li><a data-toggle="modal" data-target="#loginModal">
-                                <span class="fa fa-sign-in" style="color: #15bc12" >
-                                </span> Login</a></li>
+                            <span class="fa fa-sign-in" style="color: #15bc12" >
+                            </span> Login</a></li>
                     </ul>
                 </div>
                 <div class="col-7 col-sm-5">
